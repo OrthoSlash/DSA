@@ -1,3 +1,10 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+#include<unorderd_map>
+
+using namespace std;
+
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
