@@ -1,0 +1,21 @@
+#include<iostream>
+#include<vector>
+
+using namsespace std;
+
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int ans=0;
+        for(int i=0;i<nums.size();i++){
+            int count = 0;
+            for(int j=0;j<nums.size();j++){
+                if(nums[i] == nums[j])
+                    count++;
+            }
+            if(count > nums.size()/2)
+                return nums[i];
+        }
+        return -1;
+    }
+};
